@@ -15,12 +15,10 @@
 	import Component from 'vue-class-component'
 
 	import ManageProducts from './components/ManageProducts.vue'
-	import SaveProductForm from './components/SaveProductForm.vue'
 
 	@Component({
 		components: {
-			ManageProducts,
-			SaveProductForm
+			ManageProducts
 		}
 	})
 
