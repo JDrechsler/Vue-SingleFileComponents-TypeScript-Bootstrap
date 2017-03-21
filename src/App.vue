@@ -7,6 +7,12 @@
 				<ManageProducts></ManageProducts>
 			</div>
 		</div>
+
+		<div class="row">
+			<div class="col-md-12">
+				<SocketTest></SocketTest>
+			</div>
+		</div>
 	</div>
 </template>
 
@@ -15,10 +21,12 @@
 	import Component from 'vue-class-component'
 
 	import ManageProducts from './components/ManageProducts.vue'
+	import SocketTest from './components/SocketTest.vue'
 
 	@Component({
 		components: {
-			ManageProducts
+			ManageProducts,
+			SocketTest
 		}
 	})
 

@@ -9,7 +9,6 @@
 <script lang="ts">
 	import Vue from 'vue'
 	import Component from 'vue-class-component'
-	import uuid from 'uuid';
 	import SaveProductForm from './SaveProductForm.vue';
 	import ProductList from './ProductList.vue'
 	import * as _ from 'lodash'
@@ -21,17 +20,6 @@
 		}
 	})
 	export default class ManageProducts extends Vue {
-
-		initialData() {
-			return {
-				productInForm: {
-					id: null,
-					name: '',
-					description: '',
-					price: null
-				}
-			}
-		}
 
 		productInForm = {
 			id: null,
@@ -61,29 +49,6 @@
 				price: 595,
 			}
 		]
-
-		// onFormSave(product) {
-		// 	const index = this.products.findIndex((p) => p.id === product.id);
-		// 	if (index !== -1) {
-		// 		this.products.splice(index, 1, product)
-		// 	} else {
-		// 		product.id = uuid.v4();
-		// 		this.products.push(product);
-		// 	}
-		// 	this.resetProductInForm();
-		// }
-
-		// resetProductInForm() {
-		// 	this.productInForm = initialData().productInForm;
-		// }
-
-		// onEditClicked(product) {
-		// 	// since objects are passed by reference we need to clone the product
-		// 	// either by using Object.assign({}, product) or by using object
-		// 	// spread like we do here.
-		// 	this.productInForm = { ...product };
-		// }
-
 	}
 
 </script>
